@@ -32,7 +32,7 @@ function updateOneById(id, updatedData) {
       }
       return tour;
     }
-    return false;
+    return null;
   }
   
 function deleteOneById(id) {
@@ -54,7 +54,7 @@ if (require.main === module) {
     console.log("getOneByID called:", getOneById(1));
 
     console.log("updateOneByID called:", 
-        updateOneById(1, {name: "Explore the Wonders of Rome in 5 Days", info: "Experience the ancient history and vibrant culture of Rome in just 5 days.", image: "https://www.course-api.com/images/tours/tour-2.jpeg", price: 1900})
+        updateOneById(1, {price: 1900})
     );
     console.log("getOneByID called after item updated:", getOneById(1));
 
